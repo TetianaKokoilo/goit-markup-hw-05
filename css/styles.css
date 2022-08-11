@@ -487,10 +487,35 @@ img {
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
+  transform: translateY(100%);
+  
 }
 
 .product-thumb:hover::before {
   opacity: 1;
+}
+.product-thumb {
+  position: relative;
+}
+.description {
+  width: 322px;
+  display: flex;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.description:hover {
+  opacity: 1;
+}
+
+.card-link:hover .product-thumb::before {
+  transform: translateY(0);
 }
 .card-subtitle {
   margin-bottom: 4px;

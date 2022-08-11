@@ -14,6 +14,8 @@
   --border-header-color: #ececec;
   --outline-color: tomato;
   --svg-color: #AFB1B8;
+  --transition-duration: 250px;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   background-color: var(--background-color);
@@ -118,12 +120,35 @@ img {
   margin-left: auto;
   padding: 32px 0;
 
+  position: relative;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+.header-item::after {
+  content: "";
+
+  position: absolute;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  left: 0;
+  bottom: 0;
+
+  opacity: 0;
+  transition: opasity var(--transition-duration) var(--transition-timing-function);
+}
+
+.header-item:hover::after {
+  opacity: 1;
+}
+
 .header-item.current,
 .header-item:hover,
 .header-item:focus,

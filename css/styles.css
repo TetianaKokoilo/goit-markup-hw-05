@@ -522,7 +522,7 @@ img {
   transition: transform var(--transition-duration) var(--transition-timing-function),
     opasity var(--transition-duration) var(--transition-timing-function);
   opacity: 0;
-  overflow: ;
+  overflow: auto;
 }
 
 .card-item:hover .description {
@@ -678,4 +678,37 @@ img {
 .icon-join:hover,
 .icon-join:focus {
   background-color: var(--accent-color);
+}
+/* modal window */
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--background-color);
+  position: absolute;
+  border-radius: 4px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  color: transparent
 }

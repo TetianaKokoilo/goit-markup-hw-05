@@ -712,3 +712,8 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1)
   color: transparent
 }
+.is-hidden {
+  opacity: o;
+  visibility: hidden;
+  pointer-events: none;
+}

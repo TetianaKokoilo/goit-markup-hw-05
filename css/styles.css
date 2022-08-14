@@ -569,6 +569,8 @@ img {
   padding: 20px 24px;
   background: var(--primary-btn-color);
   border: 1px solid var(--border-portfolio-color);
+  border-top: none;
+  
 }
 /*customers*/
 .customers {

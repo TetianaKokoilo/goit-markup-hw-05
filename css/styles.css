@@ -104,10 +104,14 @@ img {
   display: flex;
   align-items: center;
 }
-
-.header-list {
+.main-nav {
   display: flex;
   margin-left: 93px;
+  align-items: center;
+  margin-right: auto;
+}
+.header-list {
+  display: flex;
 }
 .header-list .list-item {
   margin-right: 50px;

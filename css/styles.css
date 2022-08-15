@@ -510,8 +510,9 @@ img {
   display: block;
   color: var(--main-title-color)
 
-  transition: border var(--transition-duration) var(--transition-timing-function),
+  transition: 
     box-shadow var(--transition-duration) var(--transition-timing-function);
+    
 }
 .card-link:hover,
 .card-link:focus {
@@ -538,7 +539,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
   height: 100%;
   color: rgba(255, 255, 255, 1);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--transition-duration) var(--transition-timing-function),
     opasity var(--transition-duration) var(--transition-timing-function);
   overflow: auto;
@@ -551,7 +552,8 @@ img {
   letter-spacing: 0.03em;
 }
 
-.card-item:hover .overlay {
+.card-link:hover .overlay,
+.card-link:focus .overlay {
   opacity: 1;
   transform: translateY(0);
 }
